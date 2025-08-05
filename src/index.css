@@ -2,40 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Luxury Real Estate Design System - Mansion World Clone
+/* THE MANSION - House of Gifting Design System
+Matching the elegant beige, royal blue, and gold aesthetic.
 All colors MUST be HSL for perfect theming.
 */
 
 @layer base {
   :root {
-    /* Elegant neutral palette */
-    --background: 0 0% 98%;
-    --foreground: 220 13% 18%;
+    /* Warm elegant palette matching the original */
+    --background: 35 25% 92%;
+    --foreground: 25 25% 25%;
 
     /* Card system */
-    --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --card: 40 30% 95%;
+    --card-foreground: 25 25% 25%;
 
     /* Popover system */
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover: 40 30% 95%;
+    --popover-foreground: 25 25% 25%;
 
-    /* Luxury gold primary palette */
-    --primary: 43 74% 66%;
-    --primary-foreground: 220 13% 18%;
-    --primary-dark: 43 74% 56%;
+    /* Royal blue primary palette */
+    --primary: 230 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 230 65% 35%;
 
-    /* Sophisticated secondary palette */
-    --secondary: 220 13% 18%;
-    --secondary-foreground: 0 0% 98%;
+    /* Warm beige secondary palette */
+    --secondary: 35 25% 85%;
+    --secondary-foreground: 25 25% 25%;
 
-    /* Muted elegant tones */
-    --muted: 220 13% 95%;
-    --muted-foreground: 220 9% 46%;
+    /* Muted warm tones */
+    --muted: 35 20% 88%;
+    --muted-foreground: 25 15% 45%;
 
-    /* Accent luxury tones */
-    --accent: 43 74% 66%;
-    --accent-foreground: 220 13% 18%;
+    /* Gold accent tones */
+    --accent: 45 85% 55%;
+    --accent-foreground: 25 25% 25%;
 
     /* Status colors */
     --destructive: 0 84% 60%;
@@ -44,22 +45,22 @@ All colors MUST be HSL for perfect theming.
     --success-foreground: 210 40% 98%;
 
     /* Interactive elements */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 43 74% 66%;
+    --border: 35 20% 80%;
+    --input: 35 20% 88%;
+    --ring: 230 65% 45%;
 
     /* Design tokens */
     --radius: 0.5rem;
     
-    /* Luxury gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43 74% 66%), hsl(45 93% 76%));
-    --gradient-dark: linear-gradient(135deg, hsl(220 13% 18%), hsl(220 13% 25%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 13% 18% / 0.9), hsl(220 13% 25% / 0.8));
+    /* Elegant gradients matching the brand */
+    --gradient-gold: linear-gradient(135deg, hsl(45 85% 55%), hsl(45 85% 65%));
+    --gradient-royal: linear-gradient(135deg, hsl(230 65% 45%), hsl(230 65% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(35 25% 92% / 0.9), hsl(40 30% 95% / 0.8));
     
     /* Elegant shadows */
-    --shadow-luxury: 0 25px 50px -12px hsl(220 13% 18% / 0.25);
-    --shadow-gold: 0 10px 40px -10px hsl(43 74% 66% / 0.3);
-    --shadow-subtle: 0 4px 6px -1px hsl(220 13% 18% / 0.1);
+    --shadow-luxury: 0 25px 50px -12px hsl(25 25% 25% / 0.15);
+    --shadow-gold: 0 10px 40px -10px hsl(45 85% 55% / 0.3);
+    --shadow-subtle: 0 4px 6px -1px hsl(25 25% 25% / 0.1);
     
     /* Smooth transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
@@ -83,46 +84,46 @@ All colors MUST be HSL for perfect theming.
   }
 
   .dark {
-    /* Dark luxury theme */
-    --background: 220 13% 9%;
-    --foreground: 0 0% 95%;
+    /* Dark elegant theme */
+    --background: 25 25% 15%;
+    --foreground: 35 25% 90%;
 
-    --card: 220 13% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 25 25% 18%;
+    --card-foreground: 35 25% 90%;
 
-    --popover: 220 13% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 25 25% 18%;
+    --popover-foreground: 35 25% 90%;
 
-    --primary: 43 74% 66%;
-    --primary-foreground: 220 13% 18%;
-    --primary-dark: 43 74% 56%;
+    --primary: 230 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 230 65% 35%;
 
-    --secondary: 220 13% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 25 25% 20%;
+    --secondary-foreground: 35 25% 90%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 25 25% 20%;
+    --muted-foreground: 35 15% 65%;
 
-    --accent: 43 74% 66%;
-    --accent-foreground: 220 13% 18%;
+    --accent: 45 85% 55%;
+    --accent-foreground: 25 25% 15%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 95%;
     --success: 142 76% 36%;
     --success-foreground: 0 0% 95%;
 
-    --border: 220 13% 15%;
-    --input: 220 13% 15%;
-    --ring: 43 74% 66%;
+    --border: 25 25% 25%;
+    --input: 25 25% 20%;
+    --ring: 230 65% 45%;
     
-    /* Dark luxury gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43 74% 66%), hsl(45 93% 76%));
-    --gradient-dark: linear-gradient(135deg, hsl(220 13% 9%), hsl(220 13% 15%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 13% 9% / 0.95), hsl(220 13% 15% / 0.9));
+    /* Dark elegant gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(45 85% 55%), hsl(45 85% 65%));
+    --gradient-royal: linear-gradient(135deg, hsl(230 65% 45%), hsl(230 65% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 25% 15% / 0.95), hsl(25 25% 20% / 0.9));
     
-    /* Dark luxury shadows */
+    /* Dark elegant shadows */
     --shadow-luxury: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
-    --shadow-gold: 0 10px 40px -10px hsl(43 74% 66% / 0.4);
+    --shadow-gold: 0 10px 40px -10px hsl(45 85% 55% / 0.4);
     --shadow-subtle: 0 4px 6px -1px hsl(0 0% 0% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -151,18 +152,18 @@ All colors MUST be HSL for perfect theming.
 }
 
 @layer components {
-  /* Luxury button variants */
+  /* Elegant button variants */
   .btn-luxury {
-    @apply bg-gradient-to-r from-primary to-primary-dark text-primary-foreground
-           px-8 py-4 rounded-md font-semibold tracking-wide
-           shadow-gold hover:shadow-luxury
+    @apply bg-primary text-primary-foreground
+           px-8 py-3 rounded-sm font-medium tracking-wide uppercase text-sm
+           shadow-subtle hover:shadow-luxury
            transition-all duration-300
-           hover:scale-105 hover:shadow-2xl;
+           hover:bg-primary-dark;
   }
   
   .btn-outline-luxury {
-    @apply border-2 border-primary text-primary bg-transparent
-           px-8 py-4 rounded-md font-semibold tracking-wide
+    @apply border border-primary text-primary bg-transparent
+           px-8 py-3 rounded-sm font-medium tracking-wide uppercase text-sm
            hover:bg-primary hover:text-primary-foreground
            transition-all duration-300;
   }
@@ -177,7 +178,7 @@ All colors MUST be HSL for perfect theming.
   
   /* Hero section styles */
   .hero-text {
-    @apply text-6xl md:text-7xl lg:text-8xl font-serif font-bold
-           bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
+    @apply text-4xl md:text-5xl lg:text-6xl font-serif font-normal
+           text-foreground;
   }
 }

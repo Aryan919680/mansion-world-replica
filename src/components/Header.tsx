@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail, Search } from "lucide-react";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,33 +12,33 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-gold rounded-md flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">M</span>
-            </div>
-            <span className="text-2xl font-serif font-bold text-foreground">
-              Mansion<span className="text-primary">World</span>
+          <div className="flex flex-col items-center">
+            <span className="text-lg font-serif font-bold text-foreground tracking-wider">
+              THE MANSION
+            </span>
+            <span className="text-xs text-muted-foreground tracking-[0.2em] uppercase">
+              House of Gifting
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
-            <a href="#properties" className="text-foreground hover:text-primary transition-colors">Properties</a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
+            <a href="#gifts" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Shop Gifts</a>
+            <a href="#diwali" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Diwali</a>
+            <a href="#special" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Special Prices</a>
+            <a href="#custom" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Custom Gifting</a>
+            <a href="#story" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Our Story</a>
+            <a href="#contact" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Contact</a>
           </nav>
 
-          {/* Contact Info & CTA */}
+          {/* Search & Cart */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Phone className="w-4 h-4" />
-              <span>+1 (555) 123-4567</span>
-            </div>
-            <Button className="btn-luxury">
-              Get Started
-            </Button>
+            <button className="text-foreground hover:text-primary transition-colors">
+              <Search className="w-5 h-5" />
+            </button>
+            <button className="text-foreground hover:text-primary transition-colors">
+              <span className="text-sm uppercase tracking-wide">Cart</span>
+            </button>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -54,18 +54,12 @@ export const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border/50">
             <nav className="flex flex-col space-y-4 mt-4">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
-              <a href="#properties" className="text-foreground hover:text-primary transition-colors">Properties</a>
-              <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <Button className="btn-luxury w-full">
-                Get Started
-              </Button>
+              <a href="#gifts" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Shop Gifts</a>
+              <a href="#diwali" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Diwali</a>
+              <a href="#special" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Special Prices</a>
+              <a href="#custom" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Custom Gifting</a>
+              <a href="#story" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Our Story</a>
+              <a href="#contact" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Contact</a>
             </nav>
           </div>
         )}
