@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Search } from "lucide-react";
-
+import opulentLogo from "@/assets/opulentLogo.jpg";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -17,12 +17,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex flex-col items-center">
-            <span className="text-lg font-serif font-bold text-foreground tracking-wider">
-              THE MANSION
-            </span>
-            <span className="text-xs text-muted-foreground tracking-[0.2em] uppercase">
-              House of Gifting
-            </span>
+            <img src={opulentLogo} className='h-[75px]'/>
           </Link>
 
           {/* Desktop Navigation */}
