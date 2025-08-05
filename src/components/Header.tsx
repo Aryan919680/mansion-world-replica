@@ -1,34 +1,64 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Search } from "lucide-react";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex flex-col items-center">
+          <Link to="/" className="flex flex-col items-center">
             <span className="text-lg font-serif font-bold text-foreground tracking-wider">
               THE MANSION
             </span>
             <span className="text-xs text-muted-foreground tracking-[0.2em] uppercase">
               House of Gifting
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#gifts" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Shop Gifts</a>
-            <a href="#diwali" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Diwali</a>
-            <a href="#special" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Special Prices</a>
-            <a href="#custom" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Custom Gifting</a>
-            <a href="#story" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Our Story</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Contact</a>
+            <Link 
+              to="/" 
+              className={`transition-colors uppercase text-sm tracking-wide ${
+                isActive('/') ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/shop-gifts" 
+              className={`transition-colors uppercase text-sm tracking-wide ${
+                isActive('/shop-gifts') ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Shop Gifts
+            </Link>
+            <Link 
+              to="/our-story" 
+              className={`transition-colors uppercase text-sm tracking-wide ${
+                isActive('/our-story') ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Our Story
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`transition-colors uppercase text-sm tracking-wide ${
+                isActive('/contact') ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Contact
+            </Link>
           </nav>
 
           {/* Search & Cart */}
@@ -54,12 +84,42 @@ export const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border/50">
             <nav className="flex flex-col space-y-4 mt-4">
-              <a href="#gifts" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Shop Gifts</a>
-              <a href="#diwali" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Diwali</a>
-              <a href="#special" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Special Prices</a>
-              <a href="#custom" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Custom Gifting</a>
-              <a href="#story" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Our Story</a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide">Contact</a>
+              <Link 
+                to="/" 
+                className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive('/') ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/shop-gifts" 
+                className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive('/shop-gifts') ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Shop Gifts
+              </Link>
+              <Link 
+                to="/our-story" 
+                className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive('/our-story') ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Our Story
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive('/contact') ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
             </nav>
           </div>
         )}
