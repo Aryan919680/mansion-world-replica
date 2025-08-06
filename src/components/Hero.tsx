@@ -34,7 +34,7 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-30 flex flex-col items-center justify-end text-center min-h-screen px-4 pb-16">
+      <div className="relative z-30 flex flex-col items-end justify-end min-h-screen px-4 pb-16">
         <button className="bg-white text-black px-8 py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors">
           VIEW ALL
         </button>
