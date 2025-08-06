@@ -191,6 +191,14 @@ All colors MUST be HSL for perfect theming.
   font-display: swap;
 }
 
+/* Global p tag styling */
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: hsl(var(--muted-foreground));
+}
+
 /* Apply globally */
 body {
   @apply font-sans;

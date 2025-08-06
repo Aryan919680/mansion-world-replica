@@ -77,6 +77,7 @@ export default {
     heading: ["'DIN Neuzeit Grotesk'", "sans-serif"],
     sans: ["Futura", "sans-serif"], // default for body
 	navbar: ["'Montserrat'", "sans-serif"],
+	raleway: ["'Raleway'", "sans-serif"],
   },
 			backgroundImage: {
 				'gradient-gold': 'var(--gradient-gold)',
