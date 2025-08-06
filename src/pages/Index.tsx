@@ -5,12 +5,13 @@ import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
-
+import {BrandStatement} from "@/components/BrandStatement";
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <BrandStatement />
       <FeaturedProperties />
       <Services />
       <About />

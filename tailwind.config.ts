@@ -73,10 +73,11 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
-			fontFamily: {
-				serif: ['Playfair Display', 'serif'],
-				sans: ['Inter', 'sans-serif'],
-			},
+			  fontFamily: {
+    heading: ["'DIN Neuzeit Grotesk'", "sans-serif"],
+    sans: ["Futura", "sans-serif"], // default for body
+	navbar: ["'Montserrat'", "sans-serif"],
+  },
 			backgroundImage: {
 				'gradient-gold': 'var(--gradient-gold)',
 				'gradient-royal': 'var(--gradient-royal)',

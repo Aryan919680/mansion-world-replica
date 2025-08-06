@@ -182,3 +182,16 @@ All colors MUST be HSL for perfect theming.
            text-foreground;
   }
 }
+
+@font-face {
+  font-family: "Futura";
+  src: url("/fonts/Futura.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply globally */
+body {
+  @apply font-sans;
+}

@@ -18,7 +18,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Image stack */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 top-[121px]">
         {images.map((img, index) => (
           <img
             key={index}
