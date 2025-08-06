@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border/50">
       
-        <div className='flex justify-center text-[13px] w-full text-black bg-gray-100'>
+        <div className='flex justify-center text-[11px] w-full text-black bg-gray-100 p-1'>
           <span>Online Luxury Corporate Gifting Brand | Order for deliveries in India & abroad +910000000</span>
         </div>
       <div className="container mx-auto px-2 py-2">
@@ -39,7 +39,7 @@ export const Header = () => {
  </div>
 
           {/* Desktop Navigation */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mb-2">
       <nav className="hidden md:flex items-center space-x-8 font-navbar">
   <Link 
     to="/" 
