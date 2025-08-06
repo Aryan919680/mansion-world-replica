@@ -14,26 +14,31 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border/50">
       
-        <div className='hidden md:flex justify-center text-[11px] w-full text-black bg-gray-100 p-1'>
-          <span>Online Luxury Corporate Gifting Brand | Order for deliveries in India & abroad +910000000</span>
-        </div>
-      <div className="container mx-auto px-4 py-2">
-        <div className="flex items-center justify-between">
+       <div className="hidden md:flex justify-center text-[11px] w-full text-black bg-gray-100 p-1">
+    <span>Online Luxury Corporate Gifting Brand | Order for deliveries in India & abroad +910000000</span>
+  </div>
+        <div className=' md:hidden'>
+    <button 
+        onClick={toggleMenu}
+        className=" text-black"
+      >
+        {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+      </button>
+          </div>
+      <div className=" container mx-auto px-4 py-2">
+        <div className="flex items-center justify-center">
           {/* Mobile Menu Toggle - Left */}
-          <button 
-            onClick={toggleMenu}
-            className="md:hidden text-foreground hover:text-primary transition-colors"
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+     
+      
 
           {/* Logo - Center */}
-          <Link to="/" className="flex flex-col items-center">
+          <Link to="/" className=" flex flex-col items-center">
             <img src={opulentLogo} className='h-[40px] md:h-[60px]'/>
           </Link>
-
           {/* Search & Cart - Right */}
-          <div className="flex items-center space-x-2 md:space-x-4">
+          
+        </div>
+        <div className="flex items-center space-x-2 md:space-x-4 justify-end">
             <button className="hover:font-semibold hover:text-black text-black">
               <Search className="w-4 h-4 md:w-5 md:h-5" />
             </button>
@@ -41,7 +46,6 @@ export const Header = () => {
               <span className="text-xs md:text-sm uppercase tracking-wide">Cart</span>
             </button>
           </div>
-        </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center justify-center mt-2">
