@@ -9,16 +9,16 @@ All colors MUST be HSL for perfect theming.
 
 @layer base {
   :root {
-    /* Warm elegant palette matching the original */
-    --background: 35 25% 92%;
+    /* White background system */
+    --background: 0 0% 100%;
     --foreground: 25 25% 25%;
 
     /* Card system */
-    --card: 40 30% 95%;
+    --card: 0 0% 100%;
     --card-foreground: 25 25% 25%;
 
     /* Popover system */
-    --popover: 40 30% 95%;
+    --popover: 0 0% 100%;
     --popover-foreground: 25 25% 25%;
 
     /* Royal blue primary palette */
@@ -84,15 +84,15 @@ All colors MUST be HSL for perfect theming.
   }
 
   .dark {
-    /* Dark elegant theme */
-    --background: 25 25% 15%;
-    --foreground: 35 25% 90%;
+    /* White theme (same as light) */
+    --background: 0 0% 100%;
+    --foreground: 25 25% 25%;
 
-    --card: 25 25% 18%;
-    --card-foreground: 35 25% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 25 25% 25%;
 
-    --popover: 25 25% 18%;
-    --popover-foreground: 35 25% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 25% 25%;
 
     --primary: 230 65% 45%;
     --primary-foreground: 0 0% 100%;

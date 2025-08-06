@@ -1,6 +1,6 @@
 export const BrandStatement = () => {
   return (
-    <section className="px-4 py-12 bg-white text-gray-800">
+    <section className="px-4 py-12 text-gray-800">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-[20px] font-heading  mb-6">Your Gifting Destination</h2>
         <p className="text-base sm:text-lg leading-relaxed">
