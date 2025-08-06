@@ -34,20 +34,11 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      {/* <div className="relative z-30 flex flex-col items-center justify-center text-center text-white min-h-screen px-4">
-        <h1 className="text-4xl sm:text-6xl font-bold mb-6">Opulent</h1>
-        <p className="text-lg sm:text-2xl mb-6">
-          Tailored Corporate & Luxury Gifting Solutions
-        </p>
-        <div className="flex gap-4 justify-center flex-wrap">
-          <button className="bg-white text-black px-6 py-2 rounded font-semibold shadow hover:bg-gray-100">
-            Shop Now
-          </button>
-          <button className="bg-transparent border border-white px-6 py-2 rounded font-semibold hover:bg-white hover:text-black">
-            View All
-          </button>
-        </div>
-      </div> */}
+      <div className="relative z-30 flex flex-col items-center justify-end text-center min-h-screen px-4 pb-16">
+        <button className="bg-white text-black px-8 py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors">
+          VIEW ALL
+        </button>
+      </div>
     </section>
   );
 };
