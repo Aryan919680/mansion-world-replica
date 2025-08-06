@@ -14,31 +14,24 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border/50">
       
-       <div className="hidden md:flex justify-center text-[11px] w-full text-black bg-gray-100 p-1">
+       <div className="flex justify-center text-[11px] w-full text-black bg-gray-100 p-1">
     <span>Online Luxury Corporate Gifting Brand | Order for deliveries in India & abroad +910000000</span>
   </div>
-        <div className=' md:hidden'>
+        
     <button 
         onClick={toggleMenu}
-        className=" text-black"
+        className="lg:hidden text-black"
       >
         {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
-          </div>
+       
       <div className=" container mx-auto px-4 py-2">
         <div className="flex items-center justify-center">
-          {/* Mobile Menu Toggle - Left */}
-     
-      
-
-          {/* Logo - Center */}
           <Link to="/" className=" flex flex-col items-center">
             <img src={opulentLogo} className='h-[40px] md:h-[60px]'/>
           </Link>
-          {/* Search & Cart - Right */}
-          
         </div>
-        <div className="flex items-center space-x-2 md:space-x-4 justify-end">
+        <div className="lg:flex lg:items-center lg:space-x-2  lg:justify-end md:hidden">
             <button className="hover:font-semibold hover:text-black text-black">
               <Search className="w-4 h-4 md:w-5 md:h-5" />
             </button>
@@ -48,7 +41,7 @@ export const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center justify-center mt-2">
+          <div className="lg:flex lg:items-center lg:justify-center lg:mt-2 md:hidden">
             <nav className="flex items-center space-x-6 lg:space-x-8 font-navbar">
               <Link 
                 to="/" 
@@ -144,7 +137,7 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border/50">
+          <div className=" mt-4 pb-4 border-t border-border/50">
             <nav className="flex flex-col space-y-4 mt-4">
               <Link 
                 to="/" 
