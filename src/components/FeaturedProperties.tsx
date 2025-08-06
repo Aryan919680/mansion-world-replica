@@ -56,25 +56,25 @@ const properties = [
 
 export const FeaturedProperties = () => {
   return (
-    <section id="properties" className="py-20 bg-muted/30">
+    <section id="properties" className="py-12 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-serif font-bold mb-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-serif font-bold mb-4 md:mb-6">
             Featured <span className="text-primary">Properties</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Discover our handpicked selection of the world's most extraordinary mansions and estates.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
           {properties.map((property) => (
             <Card key={property.id} className="card-luxury group overflow-hidden">
               <div className="relative">
                 <img 
                   src={property.image} 
                   alt={property.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 flex gap-2">
                   {property.featured && (
@@ -92,17 +92,17 @@ export const FeaturedProperties = () => {
                 </button>
               </div>
               
-              <CardContent className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-serif font-bold mb-2">{property.title}</h3>
+              <CardContent className="p-4 md:p-6">
+                <div className="flex flex-col sm:flex-row items-start justify-between mb-4 gap-2">
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-serif font-bold mb-2">{property.title}</h3>
                     <div className="flex items-center text-muted-foreground mb-2">
                       <MapPin className="w-4 h-4 mr-1" />
-                      <span>{property.location}</span>
+                      <span className="text-sm">{property.location}</span>
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-3xl font-bold text-primary">{property.price}</p>
+                    <p className="text-2xl md:text-3xl font-bold text-primary">{property.price}</p>
                   </div>
                 </div>
 
@@ -123,11 +123,11 @@ export const FeaturedProperties = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-3">
-                  <Button className="flex-1 btn-luxury">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+                  <Button className="flex-1 btn-luxury text-sm">
                     View Details
                   </Button>
-                  <Button variant="outline" className="btn-outline-luxury">
+                  <Button variant="outline" className="btn-outline-luxury text-sm">
                     Schedule Tour
                   </Button>
                 </div>
