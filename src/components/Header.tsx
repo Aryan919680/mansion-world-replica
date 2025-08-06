@@ -17,7 +17,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex flex-col items-center">
-            <img src={opulentLogo} className='h-[75px]'/>
+            <img src={opulentLogo} className='h-[60px]'/>
           </Link>
 
           {/* Desktop Navigation */}
