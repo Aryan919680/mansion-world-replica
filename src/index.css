@@ -147,7 +147,10 @@ All colors MUST be HSL for perfect theming.
   
   /* Luxury typography */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
   }
 }
 
