@@ -17,16 +17,16 @@ const NotableClients = () => {
         </div>
 
         {/* Client Logos Grid */}
-        <div className="flex justify-center gap-16">
+        <div className="flex justify-center gap-24">
           {clients.map((client, clientIndex) => (
             <div 
               key={clientIndex}
-              className="flex flex-col items-center justify-center p-4 h-24 w-full max-w-40 group hover:scale-105 transition-transform duration-300"
+              className="flex flex-col items-center justify-center p-6 h-32 w-full max-w-52 group hover:scale-105 transition-transform duration-300"
             >
               <img 
                 src={client.logo} 
                 alt={`${client.name} logo`}
-                className="h-12 w-auto object-contain mb-2 opacity-60 group-hover:opacity-100 transition-opacity"
+                className="h-20 w-auto object-contain mb-3 opacity-60 group-hover:opacity-100 transition-opacity"
               />
               <div className="text-xs text-muted-foreground text-center font-medium tracking-wide">
                 {client.name}
