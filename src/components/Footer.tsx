@@ -54,7 +54,6 @@ We offer PAN India Gift Delivery
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h3 className="mb-6">Products</h3>
             <ul className="space-y-3">
