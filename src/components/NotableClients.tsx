@@ -1,16 +1,7 @@
 const NotableClients = () => {
   const clients = [
-    // Row 1
-    [
-      { name: "India", logo: "🇮🇳" },
-      { name: "Four Seasons", logo: "🌲" },
-      { name: "The Leela", logo: "👑" },
-      { name: "Chivas", logo: "🥃" },
-      { name: "Jazean", logo: "🌿" },
-      { name: "The White Crow", logo: "🦢" },
-    ],
-    // Row 2
-   
+    { name: "Four Seasons", logo: "🌲" },
+    { name: "JW Marriott", logo: "🏨" },
   ];
 
   return (
@@ -26,25 +17,18 @@ const NotableClients = () => {
         </div>
 
         {/* Client Logos Grid */}
-        <div className="space-y-8">
-          {clients.map((row, rowIndex) => (
+        <div className="flex justify-center gap-16">
+          {clients.map((client, clientIndex) => (
             <div 
-              key={rowIndex}
-              className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center"
+              key={clientIndex}
+              className="flex flex-col items-center justify-center p-4 h-20 w-full max-w-32 group hover:scale-105 transition-transform duration-300"
             >
-              {row.map((client, clientIndex) => (
-                <div 
-                  key={clientIndex}
-                  className="flex flex-col items-center justify-center p-4 h-20 w-full max-w-32 group hover:scale-105 transition-transform duration-300"
-                >
-                  <div className="text-2xl mb-1 opacity-60 group-hover:opacity-100 transition-opacity">
-                    {client.logo}
-                  </div>
-                  <div className="text-xs text-muted-foreground text-center font-medium tracking-wide">
-                    {client.name}
-                  </div>
-                </div>
-              ))}
+              <div className="text-2xl mb-1 opacity-60 group-hover:opacity-100 transition-opacity">
+                {client.logo}
+              </div>
+              <div className="text-xs text-muted-foreground text-center font-medium tracking-wide">
+                {client.name}
+              </div>
             </div>
           ))}
         </div>
