@@ -9,6 +9,7 @@ import {BrandStatement} from "@/components/BrandStatement";
 import { Banner } from "@/components/Banner";
 import { ModernGiving } from "@/components/ModernGiving";
 import { GiftCollections } from "@/components/GiftCollections";
+import { CustomGiftDesign } from "@/components/CustomGiftDesign";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <About />
       <Contact /> */}
       <GiftCollections />
+      <CustomGiftDesign />
       <Footer />
     </div>
   );
