@@ -10,6 +10,7 @@ import { Banner } from "@/components/Banner";
 import { ModernGiving } from "@/components/ModernGiving";
 import { GiftCollections } from "@/components/GiftCollections";
 import { CustomGiftDesign } from "@/components/CustomGiftDesign";
+import { NotableClients } from "@/components/NotableClients";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <Contact /> */}
       <GiftCollections />
       <CustomGiftDesign />
+      <NotableClients />
       <Footer />
     </div>
   );
