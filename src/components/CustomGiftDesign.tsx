@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
-
+import image from "@/assets/CustomDesign.jpg"
 const CustomGiftDesign = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
           <div className="order-2 lg:order-1">
             <img 
-              src="/lovable-uploads/51fd2846-c4dc-4757-b040-1aa3a411c87f.png" 
+              src={image} 
               alt="Custom Gift Design - Traditional Arabic coffee set with decorative books"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -16,13 +16,15 @@ const CustomGiftDesign = () => {
           
           {/* Content Section */}
           <div className="order-1 lg:order-2 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-wide">
-              CUSTOM GIFT DESIGN
+            <h2 className="text-[18px] md:text-[20px] font-heading tracking-wide">
+             INSTORE DISPLAYS & POSM
             </h2>
             
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Need to place a custom gift order for a wedding, festive or corporate event? We create those thoughtful and special gifts and make gifting easy for you. Custom gifts that will help your event or business stand out from the crowd.
-            </p>
+            <p className="leading-relaxed">
+Capture attention and boost impulse purchases with eye-catching Point-of-Sale Materials (POSM) — from standees
+ and danglers to shelf talkers and counter displays. 
+Designed to influence buying decisions right at the point of purchase, these assets turn retail spaces into silent salespeople. 
+           </p>
             
             <Button 
               variant="outline" 
