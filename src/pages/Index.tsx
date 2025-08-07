@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { FeaturedProperties } from "@/components/FeaturedProperties";
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
@@ -11,6 +10,7 @@ import { ModernGiving } from "@/components/ModernGiving";
 import { GiftCollections } from "@/components/GiftCollections";
 import { CustomGiftDesign } from "@/components/CustomGiftDesign";
 import { NotableClients } from "@/components/NotableClients";
+import { CustomOpulentDesign } from "@/components/CustomOpulentDesign";
 
 const Index = () => {
   return (
@@ -20,10 +20,8 @@ const Index = () => {
       <BrandStatement />
       <Banner />
       <ModernGiving />
-    {/*  <Services />
-      <About />
-      <Contact /> */}
       <GiftCollections />
+      <CustomOpulentDesign />
       <CustomGiftDesign />
       <NotableClients />
       <Footer />

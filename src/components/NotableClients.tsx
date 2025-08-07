@@ -10,23 +10,7 @@ const NotableClients = () => {
       { name: "The White Crow", logo: "🦢" },
     ],
     // Row 2
-    [
-      { name: "JW Marriott", logo: "🏨" },
-      { name: "Viacom18", logo: "📺" },
-      { name: "Embassy", logo: "🏢" },
-      { name: "Edelweiss", logo: "❄️" },
-      { name: "Hyundai", logo: "🚗" },
-      { name: "SB Energy", logo: "⚡" },
-    ],
-    // Row 3
-    [
-      { name: "DLF", logo: "🏗️" },
-      { name: "ACME", logo: "⚙️" },
-      { name: "Yes Bank", logo: "🏦" },
-      { name: "USIndia Business Council", logo: "🤝" },
-      { name: "Marriott", logo: "🏨" },
-      { name: "PMG Group", logo: "💼" },
-    ],
+   
   ];
 
   return (
