@@ -115,6 +115,14 @@ export const Header = () => {
                   </div>
                 </div>
               </div>
+                      <Link 
+                to="/bank" 
+                className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
+                  isActive('/contact') ? 'text-black font-semibold' : 'text-black hover:font-semibold hover:text-black'
+                }`}
+              >
+                Bank
+              </Link>
               <Link 
                 to="/our-story" 
                 className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
@@ -131,14 +139,7 @@ export const Header = () => {
               >
                 Contact
               </Link>
-               <Link 
-                to="/bank" 
-                className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
-                  isActive('/contact') ? 'text-black font-semibold' : 'text-black hover:font-semibold hover:text-black'
-                }`}
-              >
-                Bank
-              </Link>
+       
             </nav>
           </div>
        
