@@ -9,7 +9,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               
-              <h2 className="text-2xl font-serif font-bold">
+              <h2>
                 Opulent
               </h2>
             </div>
@@ -45,42 +45,35 @@ We offer PAN India Gift Delivery
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-serif font-bold mb-6">Quick Links</h3>
+            <h2 className="mb-6">Services</h2>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-secondary-foreground/80 hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#properties" className="text-secondary-foreground/80 hover:text-primary transition-colors">Properties</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-primary transition-colors">Services</a></li>
-              <li><a href="#about" className="text-secondary-foreground/80 hover:text-primary transition-colors">About</a></li>
-              <li><a href="#contact" className="text-secondary-foreground/80 hover:text-primary transition-colors">Contact</a></li>
+              <li><p>Instore Displays & POSM</p></li>
+              <li><p>Banking Stationary</p></li>
+              <li><p>Banking Collaterals</p></li>
+              <li><p>Marketing Services</p></li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-serif font-bold mb-6">Services</h3>
+            <h3 className="mb-6">Products</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-secondary-foreground/80 hover:text-primary transition-colors">Property Sales</a></li>
-              <li><a href="#" className="text-secondary-foreground/80 hover:text-primary transition-colors">Property Management</a></li>
-              <li><a href="#" className="text-secondary-foreground/80 hover:text-primary transition-colors">Investment Advisory</a></li>
-              <li><a href="#" className="text-secondary-foreground/80 hover:text-primary transition-colors">Market Analysis</a></li>
-              <li><a href="#" className="text-secondary-foreground/80 hover:text-primary transition-colors">Legal Support</a></li>
+               <li><p>Corporate Gifting</p></li>
+              <li><p>Luxury Gifting</p></li>
+              <li><p>Festive Gifting</p></li>
+              <li><p>Promotional Merchandise</p></li>
+              <li><p>Eco-Friendly Gifting</p></li>
+              <li><p>Digital Gifting</p></li>
+              <li><p>Food & Beverage Gifting</p></li>
+              <li><p>Custom Kits</p></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-serif font-bold mb-6">Contact Info</h3>
+            <h2 className="mb-6">Customer Service</h2>
             <div className="space-y-3">
-              <p className="text-secondary-foreground/80">
-                123 Luxury Avenue<br />
-                Beverly Hills, CA 90210
-              </p>
-              <p className="text-secondary-foreground/80">
-                Phone: +1 (555) 123-4567
-              </p>
-              <p className="text-secondary-foreground/80">
-                Email: contact@mansionworld.com
-              </p>
+             
             </div>
           </div>
         </div>
@@ -89,7 +82,7 @@ We offer PAN India Gift Delivery
         <div className="border-t border-secondary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-secondary-foreground/80 text-sm mb-4 md:mb-0">
-              © 2024 Mansion World. All rights reserved.
+              © 2025 Opulent. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-secondary-foreground/80 hover:text-primary transition-colors">Privacy Policy</a>
