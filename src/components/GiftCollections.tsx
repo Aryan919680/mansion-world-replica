@@ -1,20 +1,34 @@
 import { Button } from "@/components/ui/button";
-
+import  image1  from "@/assets/gift1.jpg";
+import image2 from "@/assets/Gift2.jpg";
+import image3 from "@/assets/Gift3.jpg";
+import image4 from "@/assets/Gift4.jpg";
+import image5 from "@/assets/gift5.jpg";
 const GiftCollections = () => {
   const collections = [
     {
-      title: "GIFTS FOR SPECIAL OCCASIONS",
-      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop",
+      title: "LUXURY GIFTS",
+      image: `${image2}`,
       buttonText: "VIEW COLLECTION"
     },
     {
-      title: "GIFTS CORPORATE",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+      title: "GIFT FOR CORPORATE",
+      image: `${image1}`,
       buttonText: "VIEW COLLECTION"
     },
     {
-      title: "GIFTS FOR HER",
-      image: "https://images.unsplash.com/photo-1549062572-544a64fb0c56?w=600&h=400&fit=crop",
+      title: "PROMOTIONAL MERCHANDISE",
+      image: `${image3}`,
+      buttonText: "VIEW COLLECTION"
+    },
+    {
+      title: "GIFTS FOR FESTIVAL",
+      image: `${image4}`,
+      buttonText: "VIEW COLLECTION"
+    },
+    {
+      title: "ECO-FRIENDLY GIFTING",
+      image: `${image5}`,
       buttonText: "VIEW COLLECTION"
     }
   ];
