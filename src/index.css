@@ -201,6 +201,13 @@ p {
   letter-spacing: 0.02em;
   color: hsl(var(--muted-foreground));
 }
+button{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+
 
 /* Apply globally */
 body {

@@ -115,6 +115,21 @@ export const Header = () => {
                   </div>
                 </div>
               </div>
+                               <Link 
+                to="/corporate" 
+                className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
+                  isActive('/contact') ? 'text-black font-semibold' : 'text-black hover:font-semibold hover:text-black'
+                }`}
+              >
+                Corporate
+              </Link>
+               
+
+
+
+
+
+ <div className="relative group">
                       <Link 
                 to="/bank" 
                 className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
@@ -123,6 +138,66 @@ export const Header = () => {
               >
                 Bank
               </Link>
+
+                {/* Full-width dropdown content */}
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-screen max-w-6xl mt-2 bg-white shadow-xl border border-border/20 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+                    {/* By Recipient */}
+                    <div>
+                      <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">Collateral</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li><Link to="/shop-gifts/for-her" className="hover:text-primary transition-colors">Banking Stationary</Link></li>
+                        <li><Link to="/shop-gifts/for-him" className="hover:text-primary transition-colors">⁠Printed Marketing</Link></li>
+                        <li><Link to="/shop-gifts/for-couples" className="hover:text-primary transition-colors">Operational Materials</Link></li>
+                      </ul>
+                    </div>
+
+                    {/* By Occasion */}
+                    {/* <div>
+                      <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">By Occasion</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li><Link to="/shop-gifts/wedding" className="hover:text-primary transition-colors">Wedding</Link></li>
+                        <li><Link to="/shop-gifts/festive" className="hover:text-primary transition-colors">Festive</Link></li>
+                        <li><Link to="/shop-gifts/corporate" className="hover:text-primary transition-colors">Corporate</Link></li>
+                        <li><Link to="/shop-gifts/housewarming" className="hover:text-primary transition-colors">Housewarming</Link></li>
+                        <li><Link to="/shop-gifts/thank-you" className="hover:text-primary transition-colors">Thank You</Link></li>
+                      </ul>
+                    </div> */}
+
+                    {/* By Price */}
+                    {/* <div>
+                      <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">By Price</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li><Link to="/shop-gifts/0-3000" className="hover:text-primary transition-colors">INR 0 - 3000</Link></li>
+                        <li><Link to="/shop-gifts/3000-6000" className="hover:text-primary transition-colors">INR 3000 - 6000</Link></li>
+                        <li><Link to="/shop-gifts/6000-above" className="hover:text-primary transition-colors">INR 6000 & above</Link></li>
+                      </ul>
+                    </div> */}
+
+                    {/* Featured Products */}
+                    <div className='w-[250px]'>
+                      <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">Featured</h4>
+                      <div className="space-y-3">
+                        <div className='w-[250px]'>
+                          <button className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base">NEED CHEQUES</button>
+                       </div>
+                      <div className='w-[250px]'>
+
+                        <button className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base">REPRINT</button>
+                   </div>
+                 <div className='w-[250px]'>
+                      
+                        <button className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base">LETTERHEAD</button>
+                 
+                           </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+         
               <Link 
                 to="/our-story" 
                 className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
@@ -143,8 +218,6 @@ export const Header = () => {
             </nav>
           </div>
        
-
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className=" mt-4 pb-4 border-t border-border/50">
             <nav className="flex flex-col space-y-4 mt-4">
