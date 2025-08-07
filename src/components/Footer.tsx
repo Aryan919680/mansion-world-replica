@@ -70,9 +70,16 @@ We offer PAN India Gift Delivery
           {/* Contact Info */}
           <div>
             <h2 className="mb-6">Customer Service</h2>
-            <div className="space-y-3">
-             
-            </div>
+          
+              <ul className="space-y-3">
+              <li><p>Terms & Conditions</p></li>
+              <li><p>Privacy Policy</p></li>
+              <li><p>Refund Policy</p></li>
+              <li><p>Blog</p></li>
+              <li><p>Shipping Policy</p></li>
+              <li><p>Contact</p></li>
+            </ul>
+        
           </div>
         </div>
 
