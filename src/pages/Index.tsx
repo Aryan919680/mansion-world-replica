@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import {BrandStatement} from "@/components/BrandStatement";
 import { Banner } from "@/components/Banner";
 import { ModernGiving } from "@/components/ModernGiving";
+import { GiftCollections } from "@/components/GiftCollections";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <Services />
       <About />
       <Contact /> */}
+      <GiftCollections />
       <Footer />
     </div>
   );
