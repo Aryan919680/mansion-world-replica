@@ -43,7 +43,6 @@ We offer PAN India Gift Delivery
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h2 className="mb-6">Services</h2>
             <ul className="space-y-3">
