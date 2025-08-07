@@ -17,8 +17,7 @@ const Index = () => {
       <BrandStatement />
       <Banner />
       <ModernGiving />
-      {/* <FeaturedProperties />
-      <Services />
+    {/*  <Services />
       <About />
       <Contact /> */}
       <Footer />

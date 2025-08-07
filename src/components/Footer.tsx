@@ -8,16 +8,22 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-gold rounded-md flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">M</span>
-              </div>
-              <span className="text-2xl font-serif font-bold">
-                Mansion<span className="text-primary">World</span>
-              </span>
+              
+              <h2 className="text-2xl font-serif font-bold">
+                Opulent
+              </h2>
             </div>
-            <p className="text-secondary-foreground/80 mb-6 leading-relaxed">
-              Your premier destination for luxury real estate. Connecting discerning clients with extraordinary properties worldwide.
-            </p>
+            <p className="mb-4 leading-relaxed">
+   We are a brand that celebrates people and moments through thoughtful gifts that have a unique story to tell. 
+   Shop ready to ship luxury festive gifts for your friends & family or luxury corporate corporate high end gifts 
+   for your clients through one of the best gifting sites in India. Also build customized corporate or personal gift
+    for your special event through our custom & bespoke design service.
+ </p>
+<p className="mb-2">
+We offer PAN India Gift Delivery
+</p>
+
+           
             <div className="flex space-x-4">
               <a href="#" className="text-secondary-foreground/80 hover:text-primary transition-colors">
                 <Facebook className="w-5 h-5" />
