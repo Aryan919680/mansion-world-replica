@@ -1,7 +1,7 @@
 const NotableClients = () => {
   const clients = [
-    { name: "Four Seasons", logo: "🌲" },
-    { name: "JW Marriott", logo: "🏨" },
+    { name: "Bajaj", logo: "/lovable-uploads/633dfb40-35ca-4d4e-b483-3c4f8fc3b439.png" },
+    { name: "Webiosis Systems", logo: "/lovable-uploads/ea8deb61-64fe-4739-aac4-7f14b258bcb5.png" },
   ];
 
   return (
@@ -17,15 +17,17 @@ const NotableClients = () => {
         </div>
 
         {/* Client Logos Grid */}
-        <div className="flex justify-center gap-16">
+        <div className="flex justify-center gap-24">
           {clients.map((client, clientIndex) => (
             <div 
               key={clientIndex}
-              className="flex flex-col items-center justify-center p-4 h-20 w-full max-w-32 group hover:scale-105 transition-transform duration-300"
+              className="flex flex-col items-center justify-center p-6 h-32 w-full max-w-52 group hover:scale-105 transition-transform duration-300"
             >
-              <div className="text-2xl mb-1 opacity-60 group-hover:opacity-100 transition-opacity">
-                {client.logo}
-              </div>
+              <img 
+                src={client.logo} 
+                alt={`${client.name} logo`}
+                className="h-20 w-auto object-contain mb-3 opacity-60 group-hover:opacity-100 transition-opacity"
+              />
               <div className="text-xs text-muted-foreground text-center font-medium tracking-wide">
                 {client.name}
               </div>
