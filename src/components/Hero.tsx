@@ -18,7 +18,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Image stack */}
-      <div className="absolute inset-0 top-[120px] md:top-[157px]">
+      <div className="absolute inset-0 top-[100px] sm:top-[120px] md:top-[140px] lg:top-[157px]">
         {images.map((img, index) => (
           <img
             key={index}
@@ -32,8 +32,8 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-30 flex flex-col items-end justify-end min-h-screen px-4 md:px-8 pb-8 md:pb-16">
-        <button className="bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base">
+      <div className="relative z-30 flex flex-col items-center sm:items-end justify-end min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pb-6 sm:pb-8 md:pb-12 lg:pb-16 xl:pb-20">
+        <button className="bg-white text-black px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-2.5 md:py-3 lg:py-3.5 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-xs sm:text-sm md:text-base lg:text-lg max-w-fit">
           VIEW ALL
         </button>
       </div>
