@@ -11,11 +11,13 @@ export  function BankForm() {
   });
 
   const data = watch();
-  const onSubmit = useCallback((values) => {
-    // TODO: integrate API call
-    console.log('Enquiry Data:', values);
-    alert('Enquiry submitted! We will contact you soon.');
-  }, []);
+const onSubmit = useCallback(async (values) => {
+    await fetch("https://script.google.com/macros/s/AKfycbyyAnUs5zZCBXGtv8r8GSnAQoiO7y6gIXhWxlwChSBLH32L3VmLTTi3ue1xLPiBsNqTiQ/exec", {
+        method: "POST",
+        body: JSON.stringify(values),
+    });
+    alert("Enquiry submitted and saved to Google Sheets!");
+}, []);
 
   const nextStep = async () => {
     let valid = false;
