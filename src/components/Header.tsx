@@ -22,11 +22,13 @@ export const Header = () => {
           & abroad +910000000
         </span>
       </div>
+      <div>
 
+ 
       <button onClick={toggleMenu} className="lg:hidden text-black">
         {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
-
+     </div>
       <div className=" container mx-auto px-4 py-2">
         <div className="flex items-center justify-center">
           <Link to="/" className=" flex flex-col items-center">
@@ -288,30 +290,6 @@ export const Header = () => {
                       </li>
                     </ul>
                   </div>
-
-                  {/* By Occasion */}
-                  {/* <div>
-                      <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">By Occasion</h4>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li><Link to="/shop-gifts/wedding" className="hover:text-primary transition-colors">Wedding</Link></li>
-                        <li><Link to="/shop-gifts/festive" className="hover:text-primary transition-colors">Festive</Link></li>
-                        <li><Link to="/shop-gifts/corporate" className="hover:text-primary transition-colors">Corporate</Link></li>
-                        <li><Link to="/shop-gifts/housewarming" className="hover:text-primary transition-colors">Housewarming</Link></li>
-                        <li><Link to="/shop-gifts/thank-you" className="hover:text-primary transition-colors">Thank You</Link></li>
-                      </ul>
-                    </div> */}
-
-                  {/* By Price */}
-                  {/* <div>
-                      <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">By Price</h4>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li><Link to="/shop-gifts/0-3000" className="hover:text-primary transition-colors">INR 0 - 3000</Link></li>
-                        <li><Link to="/shop-gifts/3000-6000" className="hover:text-primary transition-colors">INR 3000 - 6000</Link></li>
-                        <li><Link to="/shop-gifts/6000-above" className="hover:text-primary transition-colors">INR 6000 & above</Link></li>
-                      </ul>
-                    </div> */}
-
-                  {/* Featured Products */}
                   <div className="w-[250px]">
                     <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
                       Featured
@@ -394,6 +372,29 @@ export const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Shop Gifts
+              </Link>
+                  <Link
+              to="/corporate"
+               className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive("/shop-gifts")
+                    ? "text-primary font-semibold"
+                    : "text-foreground hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+            >
+              Corporate
+            </Link>
+
+                <Link
+                to="/bank"
+              className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive("/shop-gifts")
+                    ? "text-primary font-semibold"
+                    : "text-foreground hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Bank
               </Link>
               <Link
                 to="/our-story"
