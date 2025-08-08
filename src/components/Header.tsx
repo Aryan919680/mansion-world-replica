@@ -171,7 +171,6 @@ export const Header = () => {
 
               <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-screen max-w-6xl mt-2 bg-white shadow-xl border border-border/20 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 p-8">
-                  {/* By Recipient */}
                   <div>
                     <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
                       By Recipient
