@@ -2,9 +2,12 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Search } from "lucide-react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { BankForm } from "@/components/BankForm";
 import opulentLogo from "@/assets/opulentLogo.jpg";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isBankFormOpen, setIsBankFormOpen] = useState(false);
   const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -260,28 +263,28 @@ export const Header = () => {
                     </h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>
-                        <Link
-                          to="/shop-gifts/for-her"
-                          className="hover:text-primary transition-colors"
-                        >
-                          Banking Stationary
-                        </Link>
+                         <button
+                           onClick={() => setIsBankFormOpen(true)}
+                           className="hover:text-primary transition-colors text-left"
+                         >
+                           Banking Stationary
+                         </button>
                       </li>
                       <li>
-                        <Link
-                          to="/shop-gifts/for-him"
-                          className="hover:text-primary transition-colors"
-                        >
-                          ⁠Printed Marketing
-                        </Link>
+                         <button
+                           onClick={() => setIsBankFormOpen(true)}
+                           className="hover:text-primary transition-colors text-left"
+                         >
+                           ⁠Printed Marketing
+                         </button>
                       </li>
                       <li>
-                        <Link
-                          to="/shop-gifts/for-couples"
-                          className="hover:text-primary transition-colors"
+                         <button
+                           onClick={() => setIsBankFormOpen(true)}
+                           className="hover:text-primary transition-colors text-left"
                         >
                           Operational Materials
-                        </Link>
+                         </button>
                       </li>
                     </ul>
                   </div>
@@ -315,17 +318,26 @@ export const Header = () => {
                     </h4>
                     <div className="space-y-3">
                       <div className="w-[250px]">
-                        <button className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base">
+                        <button 
+                          onClick={() => setIsBankFormOpen(true)}
+                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
+                        >
                           NEED CHEQUES
                         </button>
                       </div>
                       <div className="w-[250px]">
-                        <button className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base">
+                        <button 
+                          onClick={() => setIsBankFormOpen(true)}
+                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
+                        >
                           REPRINT
                         </button>
                       </div>
                       <div className="w-[250px]">
-                        <button className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base">
+                        <button 
+                          onClick={() => setIsBankFormOpen(true)}
+                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
+                        >
                           LETTERHEAD
                         </button>
                       </div>
@@ -409,6 +421,13 @@ export const Header = () => {
           </div>
         )}
       </div>
+
+      {/* Bank Form Modal */}
+      <Dialog open={isBankFormOpen} onOpenChange={setIsBankFormOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <BankForm />
+        </DialogContent>
+      </Dialog>
     </header>
   );
 };
