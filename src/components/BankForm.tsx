@@ -12,7 +12,7 @@ export  function BankForm() {
 
   const data = watch();
 const onSubmit = useCallback(async (values) => {
-    await fetch("https://script.google.com/macros/s/AKfycbyyAnUs5zZCBXGtv8r8GSnAQoiO7y6gIXhWxlwChSBLH32L3VmLTTi3ue1xLPiBsNqTiQ/exec", {
+    await fetch("https://script.google.com/macros/s/AKfycbybLhiXB6jBI-Eb_arqXeDiu4Kp91FUYhw_luJK0n-7y5az7BKnKhf9fJaHMaNpCWY/exec", {
         method: "POST",
         body: JSON.stringify(values),
     });

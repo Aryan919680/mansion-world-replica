@@ -22,15 +22,19 @@ export const Header = () => {
           & abroad +910000000
         </span>
       </div>
-      <div>
-
- 
-      <button onClick={toggleMenu} className="lg:hidden text-black">
-        {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+       <div className="md:flex  lg:hidden md:container md:mx-auto md:px-4 md:py-2">
+         <button onClick={toggleMenu} className="lg:hidden text-black">
+        {isMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
       </button>
+         <div className="md:flex md:items-center md:justify-end lg:hidden md:w-[500px]">
+          <Link to="/" className="md:flex md:flex-col items-center">
+            <img src={opulentLogo} className="h-[40px] md:h-[80px]" />
+          </Link>
+        
+       </div>
      </div>
       <div className=" container mx-auto px-4 py-2">
-        <div className="flex items-center justify-center">
+        <div className="lg:flex lg:items-center lg:justify-center md:hidden">
           <Link to="/" className=" flex flex-col items-center">
             <img src={opulentLogo} className="h-[40px] md:h-[60px]" />
           </Link>
@@ -59,6 +63,100 @@ export const Header = () => {
             >
               Home
             </Link>
+
+              <div className="relative group">
+              <Link
+                to="/bank"
+                className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
+                  isActive("/contact")
+                    ? "text-black font-semibold"
+                    : "text-black hover:font-semibold hover:text-black"
+                }`}
+              >
+                Bank
+              </Link>
+
+              {/* Full-width dropdown content */}
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-[50vw] max-w-6xl mt-2 bg-white shadow-xl border border-border/20 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+                  {/* By Recipient */}
+                  <div>
+                    <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
+                      Collateral
+                    </h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>
+                         <button
+                           onClick={() => setIsBankFormOpen(true)}
+                           className="hover:text-primary transition-colors text-left"
+                         >
+                           Banking Stationary
+                         </button>
+                      </li>
+                      <li>
+                         <button
+                           onClick={() => setIsBankFormOpen(true)}
+                           className="hover:text-primary transition-colors text-left"
+                         >
+                           ⁠Printed Marketing
+                         </button>
+                      </li>
+                      <li>
+                         <button
+                           onClick={() => setIsBankFormOpen(true)}
+                           className="hover:text-primary transition-colors text-left"
+                        >
+                          Operational Materials
+                         </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="w-[250px]">
+                    <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
+                      Featured
+                    </h4>
+                    <div className="space-y-3">
+                      <div className="w-[250px]">
+                        <button 
+                          onClick={() => setIsBankFormOpen(true)}
+                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
+                        >
+                          NEED CHEQUES
+                        </button>
+                      </div>
+                      <div className="w-[250px]">
+                        <button 
+                          onClick={() => setIsBankFormOpen(true)}
+                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
+                        >
+                          REPRINT
+                        </button>
+                      </div>
+                      <div className="w-[250px]">
+                        <button 
+                          onClick={() => setIsBankFormOpen(true)}
+                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
+                        >
+                          LETTERHEAD
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <Link
+              to="/corporate"
+              className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
+                isActive("/contact")
+                  ? "text-black font-semibold"
+                  : "text-black hover:font-semibold hover:text-black"
+              }`}
+            >
+              Corporate
+            </Link>
+
             <div className="relative group">
               <Link
                 to="/shop-gifts"
@@ -232,98 +330,30 @@ export const Header = () => {
                 </div>
               </div>
             </div>
+           
             <Link
-              to="/corporate"
+              to="/projects"
               className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
-                isActive("/contact")
+                isActive("/projects")
                   ? "text-black font-semibold"
                   : "text-black hover:font-semibold hover:text-black"
               }`}
             >
-              Corporate
+              Projects
+            </Link>
+            
+            <Link
+              to="/gallery"
+              className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
+                isActive("/gallery")
+                  ? "text-black font-semibold"
+                  : "text-black hover:font-semibold hover:text-black"
+              }`}
+            >
+              Our Story
             </Link>
 
-            <div className="relative group">
-              <Link
-                to="/bank"
-                className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
-                  isActive("/contact")
-                    ? "text-black font-semibold"
-                    : "text-black hover:font-semibold hover:text-black"
-                }`}
-              >
-                Bank
-              </Link>
-
-              {/* Full-width dropdown content */}
-              <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-screen max-w-6xl mt-2 bg-white shadow-xl border border-border/20 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-                  {/* By Recipient */}
-                  <div>
-                    <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
-                      Collateral
-                    </h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>
-                         <button
-                           onClick={() => setIsBankFormOpen(true)}
-                           className="hover:text-primary transition-colors text-left"
-                         >
-                           Banking Stationary
-                         </button>
-                      </li>
-                      <li>
-                         <button
-                           onClick={() => setIsBankFormOpen(true)}
-                           className="hover:text-primary transition-colors text-left"
-                         >
-                           ⁠Printed Marketing
-                         </button>
-                      </li>
-                      <li>
-                         <button
-                           onClick={() => setIsBankFormOpen(true)}
-                           className="hover:text-primary transition-colors text-left"
-                        >
-                          Operational Materials
-                         </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-[250px]">
-                    <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
-                      Featured
-                    </h4>
-                    <div className="space-y-3">
-                      <div className="w-[250px]">
-                        <button 
-                          onClick={() => setIsBankFormOpen(true)}
-                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
-                        >
-                          NEED CHEQUES
-                        </button>
-                      </div>
-                      <div className="w-[250px]">
-                        <button 
-                          onClick={() => setIsBankFormOpen(true)}
-                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
-                        >
-                          REPRINT
-                        </button>
-                      </div>
-                      <div className="w-[250px]">
-                        <button 
-                          onClick={() => setIsBankFormOpen(true)}
-                          className="w-[250px] bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded font-semibold shadow hover:bg-gray-100 transition-colors text-sm md:text-base"
-                        >
-                          LETTERHEAD
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
 
             <Link
               to="/our-story"
@@ -362,6 +392,30 @@ export const Header = () => {
               >
                 Home
               </Link>
+            
+                  <Link
+                to="/bank"
+              className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive("/bank")
+                    ? "text-primary font-semibold"
+                    : "text-foreground hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Bank
+              </Link>
+                  <Link
+              to="/corporate"
+               className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive("/corporate")
+                    ? "text-primary font-semibold"
+                    : "text-foreground hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+            >
+              Corporate
+            </Link>
+            
               <Link
                 to="/shop-gifts"
                 className={`transition-colors uppercase text-sm tracking-wide ${
@@ -373,31 +427,20 @@ export const Header = () => {
               >
                 Shop Gifts
               </Link>
-                  <Link
-              to="/corporate"
-               className={`transition-colors uppercase text-sm tracking-wide ${
-                  isActive("/shop-gifts")
-                    ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-            >
-              Corporate
-            </Link>
 
                 <Link
-                to="/bank"
-              className={`transition-colors uppercase text-sm tracking-wide ${
-                  isActive("/shop-gifts")
+                to="/projects"
+                className={`transition-colors uppercase text-sm tracking-wide ${
+                  isActive("/projects")
                     ? "text-primary font-semibold"
                     : "text-foreground hover:text-primary"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Bank
+                Projects
               </Link>
               <Link
-                to="/our-story"
+                to="/gallery"
                 className={`transition-colors uppercase text-sm tracking-wide ${
                   isActive("/our-story")
                     ? "text-primary font-semibold"
@@ -405,7 +448,7 @@ export const Header = () => {
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Our Story
+                Gallery
               </Link>
               <Link
                 to="/contact"
