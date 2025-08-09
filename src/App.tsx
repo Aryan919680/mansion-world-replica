@@ -9,6 +9,7 @@ import OurStory from "./pages/OurStory";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { Bank } from "./pages/Bank";
+import { Projects } from "./pages/Projects";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +25,7 @@ const App = () => (
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/bank" element={<Bank />} /> {/* Assuming bank uses the same component as contact */}
-          
+          <Route path="/projects" element={<Projects />} />
           {/* Catch-all route for 404 Not Found */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
