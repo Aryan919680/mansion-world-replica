@@ -8,7 +8,7 @@ export const ModernGiving = () => {
 
 
         </p>
-     <p className="lg:text-[13px] md:text-[18px] leading-relaxed mt-2">
+     <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
         Join us on our mission to provide exceptional and luxurious gifts in India with unique personal touches. 
         </p>
 
