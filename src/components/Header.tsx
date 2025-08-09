@@ -24,7 +24,7 @@ export const Header = () => {
       </div>
        <div className="md:flex  lg:hidden md:container md:mx-auto md:px-4 md:py-2">
          <button onClick={toggleMenu} className="lg:hidden text-black">
-        {isMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+        {isMenuOpen ? <X className="w-12 h-12" /> : <Menu className="w-12 h-12" />}
       </button>
          <div className="md:flex md:items-center md:justify-end lg:hidden md:w-[500px]">
           <Link to="/" className="md:flex md:flex-col items-center">
@@ -41,7 +41,7 @@ export const Header = () => {
         </div>
         <div className="lg:flex lg:items-center lg:space-x-2  lg:justify-end md:hidden">
           <button className="hover:font-semibold hover:text-black text-black">
-            <Search className="w-4 h-4 md:w-5 md:h-5" />
+            <Search className="w-4 h-4 md:w-8 md:h-8" />
           </button>
           <button className="hover:font-semibold hover:text-black text-black">
             <span className="text-xs md:text-sm uppercase tracking-wide">
@@ -381,10 +381,10 @@ export const Header = () => {
             <nav className="flex flex-col space-y-4 mt-4">
               <Link
                 to="/"
-                className={`transition-colors uppercase text-sm tracking-wide ${
+                className={`transition-colors uppercase  tracking-wide ${
                   isActive("/")
                     ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
+                    : "text-black hover:font-semibold hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -393,71 +393,129 @@ export const Header = () => {
             
                   <Link
                 to="/bank"
-              className={`transition-colors uppercase text-sm tracking-wide ${
+              className={`transition-colors uppercase tracking-wide ${
                   isActive("/bank")
                     ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
+                    : "text-black hover:font-semibold hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Bank
+                Bank Collateral
               </Link>
-                  <Link
-              to="/corporate"
-               className={`transition-colors uppercase text-sm tracking-wide ${
-                  isActive("/corporate")
+                       <Link
+                to="/bank"
+              className={`transition-colors uppercase tracking-wide ${
+                  isActive("/bank")
                     ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
+                    : "text-black hover:font-semibold hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
-            >
-              Corporate
-            </Link>
-            
+              >
+                Bank Stationary
+              </Link>
+                       <Link
+                to="/bank"
+              className={`transition-colors uppercase tracking-wide ${
+                  isActive("/bank")
+                    ? "text-primary font-semibold"
+                    : "text-black hover:font-semibold hover:text-black"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Johnnie Walker Standee
+              </Link>
+              
               <Link
                 to="/shop-gifts"
-                className={`transition-colors uppercase text-sm tracking-wide ${
+                className={`transition-colors uppercase tracking-wide ${
                   isActive("/shop-gifts")
                     ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
+                    : "text-black hover:font-semibold hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Shop Gifts
               </Link>
-
+                  <Link
+              to="/corporate"
+               className={`transition-colors uppercase  tracking-wide ${
+                  isActive("/corporate")
+                    ? "text-primary font-semibold"
+                    : "text-black hover:font-semibold hover:text-black"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+            >
+              Corporate
+            </Link>
                 <Link
                 to="/projects"
-                className={`transition-colors uppercase text-sm tracking-wide ${
+                className={`transition-colors uppercase tracking-wide ${
                   isActive("/projects")
                     ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
+                    : "text-black hover:font-semibold hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Projects
+                Promotional Merchandise
               </Link>
               <Link
                 to="/gallery"
-                className={`transition-colors uppercase text-sm tracking-wide ${
+                className={`transition-colors uppercase tracking-wide ${
                   isActive("/our-story")
                     ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
+                    : "text-black hover:font-semibold hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Gallery
+                ⁠Festive Gifts
+
               </Link>
               <Link
                 to="/contact"
-                className={`transition-colors uppercase text-sm tracking-wide ${
+                className={`transition-colors uppercase  tracking-wide ${
                   isActive("/contact")
                     ? "text-primary font-semibold"
-                    : "text-foreground hover:text-primary"
+                    : "text-black hover:font-semibold hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                ⁠Submit Enquiry
+
+              </Link>
+                  <Link
+                to="/contact"
+                className={`transition-colors uppercase tracking-wide ${
+                  isActive("/contact")
+                    ? "text-primary font-semibold"
+                    :"text-black hover:font-semibold hover:text-black"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+              Custom Gifts
+
+              </Link>
+                  <Link
+                to="/contact"
+                className={`transition-colors uppercase  tracking-wide ${
+                  isActive("/contact")
+                    ? "text-primary font-semibold"
+                    : "text-black hover:font-semibold hover:text-black"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                ⁠Our Story
+
+              </Link>
+                  <Link
+                to="/contact"
+                className={`transition-colors uppercase tracking-wide ${
+                  isActive("/contact")
+                    ? "text-primary font-semibold"
+                    :"text-black hover:font-semibold hover:text-black"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+               ⁠Customer Service
               </Link>
             </nav>
           </div>
