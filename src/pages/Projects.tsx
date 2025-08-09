@@ -45,7 +45,7 @@ export function Projects() {
       <Header />
       
       {/* Hero Section */}
-      <section className="min-h-[56vh] flex items-center justify-center bg-gradient-to-b from-black to-amber-900/20 text-white px-5 py-12 relative overflow-hidden">
+      <section className="min-h-[56vh] flex items-center justify-center bg-gradient-to-b from-black to-amber-900/20 text-white px-5 py-12 relative overflow-hidden mt-20 md:mt-24">{/* Added top margin for fixed header */}
         <div className="max-w-7xl w-full flex gap-9 items-center">
           <div className="flex-1">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight text-yellow-600 mb-3">
