@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import img1 from "@/assets/3.png";
 import img2 from "@/assets/2.png";
 import img3 from "@/assets/1.png";
-import img4 from "@/assets/m1.png";
-import img5 from "@/assets/m2.png";
+import img4 from "@/assets/heroMobile1.jpg";
+import img5 from "@/assets/heroMobile2.jpg";
 
 const images = [img1, img2, img3];
 const mobileImages = [img4, img5];
