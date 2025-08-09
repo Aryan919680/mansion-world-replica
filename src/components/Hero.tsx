@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import img1 from "@/assets/3.png";
-import img2 from "@/assets/2.png";
-import img3 from "@/assets/1.png";
+import img1 from "@/assets/heroDesktop1.jpg";
+import img2 from "@/assets/heroDesktop2.jpg";
+import img3 from "@/assets/heroDesktop3.jpg";
+import img6 from "@/assets/heroDesktop4.jpg";
 import img4 from "@/assets/heroMobile1.jpg";
 import img5 from "@/assets/heroMobile2.jpg";
 
-const images = [img1, img2, img3];
+const images = [img1, img2, img3, img6];
 const mobileImages = [img4, img5];
 
 export const Hero = () => {
