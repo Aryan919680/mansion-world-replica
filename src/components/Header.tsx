@@ -68,7 +68,7 @@ export const Header = () => {
               <Link
                 to="/bank"
                 className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
-                  isActive("/contact")
+                  isActive("/bank")
                     ? "text-black font-semibold"
                     : "text-black hover:font-semibold hover:text-black"
                 }`}
@@ -149,7 +149,7 @@ export const Header = () => {
              <Link
               to="/corporate"
               className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
-                isActive("/contact")
+                isActive("/corporate")
                   ? "text-black font-semibold"
                   : "text-black hover:font-semibold hover:text-black"
               }`}
@@ -412,17 +412,17 @@ export const Header = () => {
               </Link>
 
               <Link
-                to="/shop-gifts"
+                to="/bank-collateral"
                 className="block text-white text-lg border-b border-gray-700 pb-4"
-                onClick={() => setIsMenuOpen(false)}
+                
               >
                 BANK COLLATERAL
               </Link>
 
               <Link
-                to="/shop-gifts/diwali"
+                to="/bank-collateral"
                 className="block text-white text-lg border-b border-gray-700 pb-4"
-                onClick={() => setIsMenuOpen(false)}
+                   
               >
                 BANK STATIONARY
               </Link>

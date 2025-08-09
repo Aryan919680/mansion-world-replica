@@ -12,19 +12,19 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6 text-royal-blue" />,
       title: "Phone",
-      details: ["+91 98765 43210", "+91 87654 32109"],
+      details: ["+91 96530 83048"],
       description: "Call us for immediate assistance"
     },
     {
       icon: <Mail className="w-6 h-6 text-royal-blue" />,
       title: "Email",
-      details: ["hello@themansionworld.com", "support@themansionworld.com"],
+      details: ["opulentsultions9@gmail.com"],
       description: "Send us your queries anytime"
     },
     {
       icon: <MapPin className="w-6 h-6 text-royal-blue" />,
       title: "Address",
-      details: ["123 Luxury Lane", "Mumbai, Maharashtra 400001"],
+      details: ["FLAT NO- F3/102, Building: KRITIKA APARTMENT Road/Street: SULTANPUR ROAD Nearby Landmark: BEHIND- AMUL BANAS DAIRY Locality/Sub Locality: CG CITY City/Town/Village: Lucknow District: Lucknow State: Uttar Pradesh PIN Code: 226002"],
       description: "Visit our flagship store"
     },
     {
@@ -40,13 +40,12 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-cream to-background">
+      <section className="pt-24 pb-16 bg-gradient-to-b from-cream to-background mt-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold text-royal-blue mb-6">
-              Get In Touch
-            </h1>
-            <p className="text-lg text-muted-foreground">
+<h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">              Get In Touch
+            </h2>
+        <p className="lg:text-[13px] md:text-[22px] leading-relaxed">
               Have questions about our gifts or need help with a special order? 
               We're here to make your gifting experience extraordinary.
             </p>
