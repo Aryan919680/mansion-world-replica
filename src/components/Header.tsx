@@ -81,33 +81,33 @@ export const Header = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
                   {/* By Recipient */}
                   <div>
-                    <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
+              <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
                       Collateral
                     </h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>
-                         <button
-                           onClick={() => setIsBankFormOpen(true)}
-                           className="hover:text-primary transition-colors text-left"
-                         >
+                         <Link
+                          to="/shop-gifts/for-her"
+                          className="hover:text-primary transition-colors"
+                        >
                            Banking Stationary
-                         </button>
+                         </Link>
                       </li>
                       <li>
-                         <button
-                           onClick={() => setIsBankFormOpen(true)}
-                           className="hover:text-primary transition-colors text-left"
-                         >
+                          <Link
+                          to="/shop-gifts/for-her"
+                          className="hover:text-primary transition-colors"
+                        >
                            ⁠Printed Marketing
-                         </button>
+                         </Link>
                       </li>
                       <li>
-                         <button
-                           onClick={() => setIsBankFormOpen(true)}
-                           className="hover:text-primary transition-colors text-left"
+                         <Link
+                          to="/shop-gifts/for-her"
+                          className="hover:text-primary transition-colors"
                         >
                           Operational Materials
-                         </button>
+                         </Link>
                       </li>
                     </ul>
                   </div>
@@ -330,7 +330,7 @@ export const Header = () => {
             </div>
              <div className="relative group">
             <Link
-              to="/projects"
+              to="/"
               className={`uppercase text-xs lg:text-sm tracking-wide transition-colors ${
                 isActive("/projects")
                   ? "text-black font-semibold"
@@ -343,8 +343,11 @@ export const Header = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
                   {/* By Recipient */}
                   <div>
-                    <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide">
-                    johnnie walker standee
+                    <h4 className="text-sm font-semibold mb-4 text-foreground uppercase tracking-wide ">
+                      <Link to="/projects">
+                          johnnie walker standee
+                      </Link>
+                
                     </h4>
                   </div>
                  

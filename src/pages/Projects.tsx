@@ -7,7 +7,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Label } from '@/components/ui/label';
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-
+import img1 from "@/assets/pro1.png";
+import img2 from "@/assets/pro6.png";
+import img3 from "@/assets/pro5.png";
+import img4 from "@/assets/pro4.png";
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -68,7 +71,7 @@ export function Projects() {
           <div className="hidden lg:block w-96 flex-shrink-0">
             <img 
               className="w-full rounded-lg shadow-2xl border border-white/5 transform hover:translate-y-[-8px] hover:scale-105 transition-transform duration-500 ease-out"
-              src="https://via.placeholder.com/480x700.png?text=Standee+Hero+Image" 
+              src={img1} 
               alt="Johnnie Walker Standee — hero mockup. Front view with gold logo and warm lighting."
             />
           </div>
@@ -89,17 +92,17 @@ export function Projects() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
                 <img 
-                  src="https://via.placeholder.com/400x500.png?text=Front+View" 
+                  src={img2}
                   alt="Front view of Johnnie Walker standee — gold logo on matte black face with three product shelves."
                   className="w-full rounded-lg object-cover h-72"
                 />
                 <img 
-                  src="https://via.placeholder.com/400x500.png?text=Side+View" 
+                  src={img3}
                   alt="Side view — slim profile, shelf depths and base ballast shown."
                   className="w-full rounded-lg object-cover h-72"
                 />
                 <img 
-                  src="https://via.placeholder.com/400x500.png?text=In-store+Placement" 
+                  src={img4} 
                   alt="In-store placement — standee beside premium product display, showing scale and presence."
                   className="w-full rounded-lg object-cover h-72"
                 />

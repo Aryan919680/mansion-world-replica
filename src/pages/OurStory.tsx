@@ -47,7 +47,7 @@ const OurStory = () => {
               Our Story
             </h1>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              At The Mansion - House of Gifting, we believe that every gift is an opportunity to create magic, 
+              At The Opulent- House of Gifting, we believe that every gift is an opportunity to create magic, 
               forge connections, and celebrate the beautiful moments that make life extraordinary.
             </p>
             <Badge variant="secondary" className="px-6 py-2 text-sm">
@@ -67,7 +67,7 @@ const OurStory = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Founded in 2018, The Mansion began as a small dream to revolutionize the art of gifting. 
+                  Founded in 2018, The Opulent began as a small dream to revolutionize the art of gifting. 
                   Our founders, passionate about creating meaningful connections through thoughtful presents, 
                   noticed a gap in the market for truly personalized and premium gifting experiences.
                 </p>
@@ -78,7 +78,7 @@ const OurStory = () => {
                   high standards of quality and uniqueness.
                 </p>
                 <p>
-                  Today, The Mansion stands as a testament to the power of passion, dedication, and the 
+                  Today, The Opulent stands as a testament to the power of passion, dedication, and the 
                   belief that the right gift can change someone's day, week, or even life.
                 </p>
               </div>
@@ -92,7 +92,7 @@ const OurStory = () => {
               <p className="text-center text-sm text-muted-foreground italic">
                 "Every gift should be as unique as the person receiving it"
               </p>
-              <p className="text-center text-sm font-medium mt-2">- The Mansion Founders</p>
+              <p className="text-center text-sm font-medium mt-2">- The Opulent Founders</p>
             </div>
           </div>
         </div>
