@@ -24,8 +24,27 @@ export  function BankCollateral() {
   };
 
   return (
-    <div className="bg-white">
-
+    <div className="bg-gradient-to-r from-pink-200 to-blue-200">
+{/* 
+ <header className="bg-gradient-to-r from-pink-200 to-blue-200 py-6 shadow-lg">
+        <div className="container mx-auto px-6 flex items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+              <svg className="w-8 h-8 text-teal-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" />
+              </svg>
+            </div>
+            <div>
+              <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">
+                Bank Collateral & Stationary
+              </h2>
+              <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2 text-gray-600">
+                Premium Financial Solutions
+              </p>
+            </div>
+          </div>
+        </div>
+      </header> */}
 
       {/* Hero */}
       <section className="py-20 relative overflow-hidden">
@@ -35,8 +54,8 @@ export  function BankCollateral() {
           <div className="animate-bounce absolute bottom-20 left-1/4 w-12 h-12 bg-blue-200 rounded-full delay-2000"></div>
         </div>
         <div className="container mx-auto px-6 text-center relative z-10">
-          <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">
-            Unlock Your <span className="text-yellow-300">Financial Potential</span>
+          <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6 mt-20">
+            Unlock Your Financial Potential
           </h2>
           <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2 max-w-4xl mx-auto">
             Access premium bank collateral and stationary services trusted by Fortune 500 companies and
