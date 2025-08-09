@@ -48,18 +48,18 @@ export function Projects() {
       <Header />
       
       {/* Hero Section */}
-      <section className="min-h-[56vh] flex items-center justify-center bg-gradient-to-b from-black to-amber-900/20 text-white px-5 py-12 relative overflow-hidden lg:mt-[10rem] md:mt-24">{/* Added top margin for fixed header */}
+      <section className="min-h-[56vh] flex items-center justify-center  px-5 py-12 relative overflow-hidden lg:mt-[10rem] md:mt-24">{/* Added top margin for fixed header */}
         <div className="max-w-7xl w-full flex gap-9 items-center">
           <div className="flex-1">
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight text-yellow-600 mb-3">
+           <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">
               Energise the Pursuit of Your Richest Life
-            </h1>
-            <p className="text-yellow-50/90 mb-5 text-lg leading-relaxed">
+            </h2>
+            <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
               Our Johnnie Walker standee isn't just a display — it's an invitation. Designed to embody the iconic "Keep Walking" spirit, it draws the eye, sparks curiosity, and brings the brand to life.
             </p>
             <Button 
               onClick={() => setIsModalOpen(true)}
-              className="bg-yellow-600 hover:bg-yellow-700 text-black font-bold rounded-full px-6 py-3 shadow-2xl"
+              className="bg-yellow-600 hover:bg-yellow-700 text-black font-bold rounded-full px-6 py-3 shadow-2xl mt-4"
             >
               Contact Studio →
             </Button>
@@ -83,10 +83,10 @@ export function Projects() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-7 items-start">
           <div>
             <div className="bg-card rounded-xl p-7 shadow-lg border border-border">
-              <h2 className="font-serif text-foreground text-2xl lg:text-3xl mb-3">
+             <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">
                 Johnnie Walker — Brand Experience Standee
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-5 text-lg">
+                <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2 mb-4">
                 This premium freestanding standee was engineered for impact. From the heritage-inspired typography to a rich black-and-gold palette, every element reinforces Johnnie Walker's timeless elegance and adventurous energy. Slim profile, high impact: perfect for point-of-purchase activation, tasting events and venues that demand presence without bulk.
               </p>
 
@@ -108,29 +108,29 @@ export function Projects() {
                 />
               </div>
 
-              <p className="text-muted-foreground text-sm">
+                  <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
                 Image instructions: front view should be shot on a neutral studio background with even lighting. Side profile to include a scale reference (human or shelving). In-store placement photo should show the display in a retail aisle with product interaction.
               </p>
             </div>
 
             <section className="mt-5">
-              <h3 className="text-xl font-semibold mb-3">Why It Works</h3>
+              <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">Why It Works</h2>
               <div className="flex flex-wrap gap-5">
                 <div className="flex-1 min-w-[220px] bg-amber-50 p-4 rounded-lg border border-amber-100">
-                  <h4 className="font-semibold text-foreground mb-2">Strategic Visual Hierarchy</h4>
-                  <p className="text-muted-foreground text-sm m-0">
+                <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">Strategic Visual Hierarchy</h2>
+                       <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
                     Logo anchors attention, headline pulls interest, shelves guide the eye to product.
                   </p>
                 </div>
                 <div className="flex-1 min-w-[220px] bg-amber-50 p-4 rounded-lg border border-amber-100">
-                  <h4 className="font-semibold text-foreground mb-2">Premium Materials</h4>
-                  <p className="text-muted-foreground text-sm m-0">
+                 <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">Premium Materials</h2>
+                       <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
                     Matte vinyl, acrylic logo with gold foil, warm white LEDs for authentic whisky tones.
                   </p>
                 </div>
                 <div className="flex-1 min-w-[220px] bg-amber-50 p-4 rounded-lg border border-amber-100">
-                  <h4 className="font-semibold text-foreground mb-2">Modular Assembly</h4>
-                  <p className="text-muted-foreground text-sm m-0">
+                <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">Modular Assembly</h2>
+                       <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
                     Flat-pack friendly, T-nut repeat assembly and hidden cable channels make it retail-ready.
                   </p>
                 </div>
@@ -139,8 +139,8 @@ export function Projects() {
           </div>
 
           <aside className="bg-card rounded-xl p-7 shadow-lg border border-border">
-            <h3 className="text-xl font-semibold mb-3">Bring Johnnie's World to Your Venue</h3>
-            <p className="text-muted-foreground mb-3">
+          <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">Bring Johnnie's World to Your Venue</h2>
+     <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
               Your brand deserves more than a display — it deserves a conversation starter. Let our studio craft standees that sell a story as much as they sell a product.
             </p>
 
@@ -158,7 +158,7 @@ export function Projects() {
                 Contact Studio →
               </Button>
             </div>
-            <p className="mt-3 text-muted-foreground text-sm">
+                <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
               Prefer email? Send specs to{' '}
               <a href="mailto:studio@opulent.com" className="text-primary hover:underline">
                 studio@opulent.com
@@ -188,8 +188,8 @@ export function Projects() {
           <div className="bg-background rounded-lg max-w-2xl w-full p-6 shadow-2xl">
             <div className="flex justify-between items-center mb-3">
               <div>
-                <h3 className="text-xl font-semibold m-0">Contact the Studio</h3>
-                <p className="text-muted-foreground text-sm mt-1">
+                <h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">Contact the Studio</h2>
+                    <p className="lg:text-[13px] md:text-[22px] leading-relaxed mt-2">
                   Quick 2-step enquiry — we'll get back within one business day.
                 </p>
               </div>
