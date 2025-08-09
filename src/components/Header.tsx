@@ -388,7 +388,7 @@ export const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-black/95 z-50 overflow-y-auto">
+          <div className="fixed inset-0 bg-[#454545] z-50">
             <div className="flex justify-between items-center p-6 border-b border-gray-700">
               <div></div>
               <button 
@@ -413,7 +413,7 @@ export const Header = () => {
                 className="block text-white text-lg border-b border-gray-700 pb-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Shop All Gifts
+                BANK COLLATERAL
               </Link>
 
               <Link
@@ -421,9 +421,23 @@ export const Header = () => {
                 className="block text-white text-lg border-b border-gray-700 pb-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                DIWALI
+                BANK STATIONARY
               </Link>
 
+               <Link
+                to="/projects"
+                className="block text-white text-lg border-b border-gray-700 pb-4"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                JOHNNIE WALKER STANDEE
+              </Link>
+     <Link
+                to="/shop-gifts"
+                className="block text-white text-lg border-b border-gray-700 pb-4"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                SHOP GIFTS
+              </Link>
               <Link
                 to="/corporate"
                 className="block text-white text-lg border-b border-gray-700 pb-4"
@@ -437,23 +451,7 @@ export const Header = () => {
                 className="block text-white text-lg border-b border-gray-700 pb-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                WEDDING / ANNIVERSARY
-              </Link>
-
-              <Link
-                to="/shop-gifts/for-her"
-                className="block text-white text-lg border-b border-gray-700 pb-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                For Her
-              </Link>
-
-              <Link
-                to="/shop-gifts/for-him"
-                className="block text-white text-lg border-b border-gray-700 pb-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                For Him
+                PROMOTIONAL MERCHANDISE
               </Link>
 
               <Link
@@ -461,7 +459,7 @@ export const Header = () => {
                 className="block text-white text-lg border-b border-gray-700 pb-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Festive
+                FESTIVE GIFTS
               </Link>
 
               <Link
@@ -469,7 +467,7 @@ export const Header = () => {
                 className="block text-white text-lg border-b border-gray-700 pb-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Stationery Lover
+                SUBMIT ENQUIRY
               </Link>
 
               <Link
@@ -477,7 +475,7 @@ export const Header = () => {
                 className="block text-white text-lg border-b border-gray-700 pb-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                INR 0 - 3000
+                CUSTOM GIFTS
               </Link>
 
               <Link
@@ -485,7 +483,7 @@ export const Header = () => {
                 className="block text-white text-lg border-b border-gray-700 pb-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                INR 3000 - 6000
+                OUR STORY
               </Link>
 
               <Link
@@ -493,24 +491,9 @@ export const Header = () => {
                 className="block text-white text-lg border-b border-gray-700 pb-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                INR 6000 & above
+                CUSTOMER SERVICE
               </Link>
 
-              <Link
-                to="/custom-gifting"
-                className="block text-white text-lg border-b border-gray-700 pb-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                CUSTOM GIFTING
-              </Link>
-
-              <Link
-                to="/our-story"
-                className="block text-white text-lg border-b border-gray-700 pb-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                OUR STORY
-              </Link>
             </nav>
 
             <div className="px-6 py-4 border-t border-gray-700 flex items-center justify-between">
