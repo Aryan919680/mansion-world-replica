@@ -14,11 +14,11 @@ const CustomGiftDesign = () => {
             />
           </div>
           <div className="order-1 lg:order-2 space-y-6">
-            <h2 className="text-[18px] md:text-[20px] font-heading tracking-wide">
+            <h2 className="text-[18px] md:text-[28px] font-heading tracking-wide">
               INSTORE DISPLAYS & POSM
             </h2>
 
-            <p className="leading-relaxed">
+            <p className="lg:text-[13px] md:text-[22px] leading-relaxed">
               Capture attention and boost impulse purchases with eye-catching
               Point-of-Sale Materials (POSM) — from standees and danglers to
               shelf talkers and counter displays. Designed to influence buying
