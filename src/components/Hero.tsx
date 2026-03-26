@@ -54,7 +54,7 @@ export const Hero = () => {
             key={index}
             src={img}
             alt={`slide-${index}`}
-            className={`w-full h-auto max-h-[100vh] object-contain transition-opacity duration-[2000ms] ease-in-out ${
+            className={`w-full h-screen object-cover transition-opacity duration-[2000ms] ease-in-out ${
               index === mobileIndex
                 ? "opacity-100 z-10"
                 : "opacity-0 z-0 absolute top-0 left-0"
