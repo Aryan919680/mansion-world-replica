@@ -47,7 +47,7 @@ export const Footer = () => {
           </div>
 
           {/* Services + Products + Customer Service — always in one row */}
-          <div className="lg:col-span-3 grid grid-cols-3 gap-4 sm:gap-8">
+          <div className="lg:col-span-3 grid grid-cols-2 gap-4 sm:gap-10">
 
             {/* Services */}
             <div>
