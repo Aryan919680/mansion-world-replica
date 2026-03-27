@@ -267,7 +267,7 @@ export const Header = () => {
               key={i}
               to={link.path}
               onClick={() => setIsMenuOpen(false)}
-              className={`flex items-center px-6 py-[18px] text-sm font-medium tracking-widest uppercase border-b border-white/10 transition-colors ${
+              className={`flex items-center text-[18px] px-6 py-[18px] text-sm font-medium tracking-widest uppercase border-b border-white/10 transition-colors ${
                 isActive(link.path) ? "text-white bg-white/10" : "text-white/80 hover:text-white hover:bg-white/5"
               }`}
             >
