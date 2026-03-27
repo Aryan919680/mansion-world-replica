@@ -108,7 +108,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 sm:h-[180px] lg:h-[150px]">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 sm:h-[190px] lg:h-[150px]">
         {/* Announcement bar */}
         <div className="flex justify-center lg:text-[10px] sm:text-[23px] w-full text-black bg-gray-100 px-4 py-3 text-center leading-tight">
           Online Luxury Corporate Gifting Brand | Order for deliveries in India &amp; abroad +910000000
