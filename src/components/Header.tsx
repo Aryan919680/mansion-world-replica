@@ -108,9 +108,9 @@ export const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 sm:h-[180px]">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 sm:h-[180px] lg:h-[150px]">
         {/* Announcement bar */}
-        <div className="flex justify-center text-[10px] sm:text-[18px] w-full text-black bg-gray-100 px-4 py-3 text-center leading-tight">
+        <div className="flex justify-center lg:text-[10px] sm:text-[23px] w-full text-black bg-gray-100 px-4 py-3 text-center leading-tight">
           Online Luxury Corporate Gifting Brand | Order for deliveries in India &amp; abroad +910000000
         </div>
 
@@ -131,13 +131,12 @@ export const Header = () => {
           </Link>
 
           {/* Right actions */}
-          <div className="flex items-center gap-4">
-            <button aria-label="Search" className="text-black">
-              <Search className="w-12 h-12" />
+          <div className="flex items-center ">
+            <Link to='/contact'>
+            <button className=" text-[30px]">
+              Contact us
             </button>
-            <button aria-label="Cart" className="text-black relative">
-              <ShoppingBag className="w-12 h-12" />
-            </button>
+          </Link>
           </div>
         </div>
 
@@ -250,7 +249,7 @@ export const Header = () => {
       >
         {/* Drawer header */}
         <div className="flex items-center justify-between px-6 py-6 border-b border-white/10">
-          <img src={opulentLogo} alt="Opulent" className="h-14 object-contain brightness-0 invert" />
+          <img src={opulentLogo} alt="Opulent" className="h-14 object-contain" />
           <button
             onClick={() => setIsMenuOpen(false)}
             className="text-white/80 hover:text-white transition-colors p-1"
@@ -261,20 +260,22 @@ export const Header = () => {
         </div>
 
         {/* Nav links */}
-        <nav className="flex-1 overflow-y-auto py-2">
-          {mobileLinks.map((link, i) => (
-            <Link
-              key={i}
-              to={link.path}
-              onClick={() => setIsMenuOpen(false)}
-              className={`flex items-center text-[18px] px-6 py-[18px] font-medium tracking-widest uppercase border-b border-white/10 transition-colors ${
-                isActive(link.path) ? "text-white bg-white/10" : "text-white/80 hover:text-white hover:bg-white/5"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+       <nav className="flex flex-col flex-1 h-full">
+  {mobileLinks.map((link, i) => (
+    <Link
+      key={i}
+      to={link.path}
+      onClick={() => setIsMenuOpen(false)}
+      className={`flex flex-1 items-center text-[23px] px-6 font-medium tracking-widest uppercase border-b border-white/10 transition-colors ${
+        isActive(link.path)
+          ? "text-white bg-white/10"
+          : "text-white/80 hover:text-white hover:bg-white/5"
+      }`}
+    >
+      {link.label}
+    </Link>
+  ))}
+</nav>
 
         {/* Footer */}
         <div className="px-5 py-4 border-t border-white/10">
