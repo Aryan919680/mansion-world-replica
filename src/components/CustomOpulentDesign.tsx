@@ -16,11 +16,11 @@ const CustomOpulentDesign = () => {
           
           {/* Content Section */}
           <div className="order-1 lg:order-2 space-y-6">
-            <h2 className="text-[18px] md:text-[28px] font-heading tracking-wide">
+            <h2 className="text-[18px] sm:text-[30px] font-heading tracking-wide">
              OPULENT’S BANKING COLLATERALS & STATIONERY
             </h2>
             
-             <p className="lg:text-[13px] md:text-[22px] leading-relaxed">
+             <p className="lg:text-[13px] sm:text-[25px] leading-relaxed">
 Secure, custom-branded cheque leaves, passbooks, letterheads, and forms—crafted to meet RBI and 
 international standards with tamper-resistant substrates and precision print. Rapid, end-to-end production
  (including eco-friendly options) ensures your bank’s collateral reflects trust, compliance, and premium quality. 

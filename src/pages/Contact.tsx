@@ -40,12 +40,12 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-cream to-background mt-20">
+      <section className="pt-24 pb-16 bg-gradient-to-b from-cream to-background lg:mt-20 sm:mt-32">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-<h2 className="lg:text-[18px] md:text-[28px] font-heading mb-4 md:mb-6">              Get In Touch
+<h2 className="lg:text-[18px] sm:text-[30px] font-heading mb-4 md:mb-6">              Get In Touch
             </h2>
-        <p className="lg:text-[13px] md:text-[22px] leading-relaxed">
+        <p className="lg:text-[13px] sm:text-[25px] leading-relaxed">
               Have questions about our gifts or need help with a special order? 
               We're here to make your gifting experience extraordinary.
             </p>
@@ -66,7 +66,7 @@ const Contact = () => {
                   <h3 className="text-lg font-semibold mb-3">{info.title}</h3>
                   <div className="space-y-1 mb-3">
                     {info.details.map((detail, idx) => (
-                      <p key={idx} className="text-sm font-medium">{detail}</p>
+                      <p key={idx} className="lg:text-sm sm:text-[22px] font-medium">{detail}</p>
                     ))}
                   </div>
                   <p className="text-xs text-muted-foreground">{info.description}</p>
@@ -84,40 +84,40 @@ const Contact = () => {
             {/* Contact Form */}
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl font-serif text-royal-blue">Send us a Message</CardTitle>
-                <p className="text-muted-foreground">
+                <CardTitle className="lg:text-2xl sm:text-[30px] font-serif text-royal-blue">Send us a Message</CardTitle>
+                <p className="text-muted-foreground sm:text-[25px]">
                   Fill out the form below and we'll get back to you within 24 hours.
                 </p>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-6 ">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="Enter your first name" />
+                    <Label htmlFor="firstName " className="sm:text-[25px]">First Name</Label>
+                    <Input id="firstName" placeholder="Enter your first name" className="sm:text-[25px]"/>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Enter your last name" />
+                    <Label htmlFor="lastName" className="sm:text-[25px]">Last Name</Label>
+                    <Input id="lastName" placeholder="Enter your last name" className="sm:text-[25px]"/>
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="Enter your email" />
+                  <Label htmlFor="email" className="sm:text-[25px]">Email</Label>
+                  <Input id="email" type="email" placeholder="Enter your email" className="sm:text-[25px]"/>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number</Label>
-                  <Input id="phone" type="tel" placeholder="Enter your phone number" />
+                  <Label htmlFor="phone" className="sm:text-[25px]">Phone Number</Label>
+                  <Input id="phone" type="tel" placeholder="Enter your phone number" className="sm:text-[25px]"/>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="What is this regarding?" />
+                  <Label htmlFor="subject" className="sm:text-[25px]">Subject</Label>
+                  <Input id="subject" placeholder="What is this regarding?" className="sm:text-[25px]"/>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message"className="sm:text-[25px]">Message</Label>
                   <Textarea 
                     id="message" 
                     placeholder="Tell us how we can help you..." 
-                    className="min-h-[120px]"
+                    className="min-h-[120px] text-[25px]"
                   />
                 </div>
                 <Button className="w-full gap-2">
