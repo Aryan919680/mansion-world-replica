@@ -108,9 +108,9 @@ export const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 sm:h-[160px]">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 sm:h-[180px]">
         {/* Announcement bar */}
-        <div className="flex justify-center text-[10px] sm:text-[16px] w-full text-black bg-gray-100 px-4 py-3 text-center leading-tight">
+        <div className="flex justify-center text-[10px] sm:text-[18px] w-full text-black bg-gray-100 px-4 py-3 text-center leading-tight">
           Online Luxury Corporate Gifting Brand | Order for deliveries in India &amp; abroad +910000000
         </div>
 
@@ -122,21 +122,21 @@ export const Header = () => {
             className="text-black p-1 -ml-1"
             aria-label="Open menu"
           >
-            <Menu className="w-12 h-12" />
+            <Menu className="w-14 h-14" />
           </button>
 
           {/* Logo – centered */}
           <Link to="/" className="absolute left-1/2 -translate-x-1/2">
-            <img src={opulentLogo} alt="Opulent" className="h-[90px] object-contain" />
+            <img src={opulentLogo} alt="Opulent" className="h-[110px] mt-4 object-contain" />
           </Link>
 
           {/* Right actions */}
           <div className="flex items-center gap-4">
             <button aria-label="Search" className="text-black">
-              <Search className="w-10 h-10" />
+              <Search className="w-12 h-12" />
             </button>
             <button aria-label="Cart" className="text-black relative">
-              <ShoppingBag className="w-10 h-10" />
+              <ShoppingBag className="w-12 h-12" />
             </button>
           </div>
         </div>
